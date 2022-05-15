@@ -1,0 +1,44 @@
+<PageLayout>:
+    BoxLayout:
+        canvas:
+            Color:
+                rgba: 0, 0, 0, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        orientation: 'vertical'
+
+        Label:
+            size_hint_y: None
+            height: 1.5 * self.texture_size[1]
+            text: 'Page 1'
+
+
+        Button:
+            text: 'GFG'
+
+            on_press: print("This is the first page")
+    BoxLayout:
+        canvas:
+            Color:
+                rgba: 1, 0, 0, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        orientation: 'vertical'
+
+        Label:
+            size_hint_y: None
+            height: 1.5 * self.texture_size[1]
+            text: 'Page 1'
+
+
+        Button:
+            text: 'GFG'
+
+            on_press: print("This is the first page")
+
+
+

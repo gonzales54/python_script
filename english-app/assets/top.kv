@@ -1,0 +1,14 @@
+<TopWidget>:
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: "Mode\n 1: Translater \n 2: Make Your Own Word List \n 3: Quiz \n 4: Reading News Article"
+            background_color: 0,1,1,1
+            font_size: 40
+
+        TextInput:
+            id: input
+            hint_text: 'Enter text'
+            multiline: False
+            on_text: app.process()
+
